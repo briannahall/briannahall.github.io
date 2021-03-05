@@ -1,0 +1,113 @@
+
+:root {
+    --background-color : #F3ECF6;
+    --light-shade: #B49EC0;
+    --mid-shade: #7E6A8A;
+    --dark-shade: #594664; 
+    --black: #2D2830;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    max-width: 950px;
+    padding: 5% 5% 0 5%;
+    margin: 0 auto;
+ }
+
+img.header-img{
+    height: 150px;
+    width: 150px;
+}
+
+header #name{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0;
+}
+
+header #social-handle{
+    font-size: 1.5em;
+    margin: 0;
+
+}
+
+.list-link{
+    text-decoration: none;
+    color: white;
+}
+
+.list-link p {
+    padding: 10px;
+    border: 1px solid var(--black);
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+a.list-link p:hover, 
+a.list-link:focus p{
+    background-color: var(--background-color);
+    color: black;
+    font-weight: 700;
+}
+
+.list-link:nth-of-type(3n + 1) p{
+    background-color: var(--light-shade);
+}
+.list-link:nth-of-type(3n + 1) p::hover{
+    color: var(--light-shade);
+}
+
+.list-link:nth-of-type(3n + 2) p{
+    background-color: var(--mid-shade);
+}
+
+.list-link:nth-of-type(3n + 3) p{
+    background-color: var(--dark-shade);
+}
+
+#social-icon-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+}
+
+/* Emoji Content */
+#clapperboard::after{
+    content: "\01F3AC";
+}
+
+#read::after{
+    content: "\01F4D6";
+}
+
+#envelope::after{
+    content: "\01F4EC";
+}
+
+#calendar::after{
+    content: "\01F4C5";
+}
+
+#coffee::after{
+    content: "\02615";
+}
+
+#heart::after{
+    content: "\02764";
+    color: red;
+}
+
+@media screen and (min-width: 850px){
+    #social-icon-group {
+        display: block;
+    }
+    .social-icon{
+        margin: 0 10px;
+    }
+}
