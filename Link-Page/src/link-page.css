@@ -45,8 +45,7 @@ header #social-handle{
     transition: 0.3s;
 }
 
-a.list-link p:hover, 
-a.list-link:focus p{
+a.list-link p:hover{
     background-color: var(--background-color);
     color: black;
     font-weight: 700;
