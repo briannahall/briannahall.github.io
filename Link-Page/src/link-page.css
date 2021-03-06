@@ -1,4 +1,6 @@
 
+@-ms-viewport{ width: device-width; }
+
 :root {
     --background-color : #F3ECF6;
     --light-shade: #B49EC0;
