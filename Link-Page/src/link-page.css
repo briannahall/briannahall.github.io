@@ -70,6 +70,7 @@ a.list-link p:hover{
 #social-icon-group {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .social-icon{
